@@ -14,7 +14,7 @@ body {
 #main-box {
     width: 100%;
     height: 100%;
-    background-color: crimson;
+    background-color: #1E90FF;
     position: relative;
 }
 /* navbar portion */
@@ -54,9 +54,147 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0 30vw;
+    align-items: center; /* Align items vertically */
+    flex-direction: row; /* Arrange items in a row */
+    padding: 0 12vw; /* Adjust padding for better spacing */
+    gap: 2vw; /* Add spacing between the text and the image */
 }
 
+.heading-part h1 {
+    font-size: 3.5vw;
+    line-height: 1.5;
+    color: #000;
+}
+span{
+    color: white;
+}
+
+.heading-part .about-line {
+    border: 1px solid black;
+    color: white;
+    width: 13vw;
+    height: 4vw;
+    padding: 0.8vw 2vw; 
+    border-radius: 1.5vw;
+    text-align: center; /* Ensures text is centered */
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.profile-image img {
+    width: 400px; /* Set the width of the image */
+    height: 400px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits nicely */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for aesthetics */
+    
+}
+
+/* Services portion */
+.services-portion{
+    height: 100%;
+    width: 100%;
+    padding-left: 2vw;
+}
+
+.services-heading{
+    font-size: 3.5vw;
+    font-weight: 700;
+    margin-top: 3vw;
+
+}
+.services-heading span{
+color:#1E90FF ;
+}
+
+.services-line1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 4vw;
+    box-sizing: border-box;
+    line-height: 2vw;
+    gap: 5vw;
+    padding-left: 10vw;
+}
+.service1{
+    padding: 2vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+
+}
+.service2{
+    padding: 2vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+
+}
+.service3{
+    padding: 2vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+
+}
+
+.service1 h2{
+    font-size: 2.5vw;
+    line-height: 5vw;
+    text-align: center;
+}
+.service2 h2{
+    font-size: 2.5vw;
+    line-height: 5vw;
+    text-align: center;
+}
+.service3 h2{
+    font-size: 2.5vw;
+    line-height: 5vw;
+    text-align: center;
+}
+
+.service1 p{
+    text-align: center;
+}
+
+.service2 p{
+    text-align: center;
+}
+
+.service3 p{
+    text-align: center;
+}
+
+.services-line2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 4vw;
+    box-sizing: border-box;
+    line-height: 2vw;
+    gap: 5vw;
+    padding-left: 10vw;
+}
+
+.services-line1 i{
+    font-size: 4vw;
+    padding-left: 6.5vw;
+}
+.services-line2 i{
+    font-size: 4vw;
+    padding-left: 6.5vw;
+}
+
+
+
+
+
+
+
+
+/* hover effects portion */
+
+.heading-part .about-line:hover {
+    background-color: #1E90FF; /* Change background color */
+    color: black; /* Change text color */
+    transform: translateY(5px); /* Slight upward movement */
+}
 
