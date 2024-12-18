@@ -283,14 +283,16 @@ span {
     margin-top: 5vw;
     padding-left: 5vw;
 }
-.about-me img{
+
+.about-me img {
     border-radius: 10%;
 }
+
 .about-me .profile-details {
     padding-left: 5vw;
     padding-top: 3vw;
     box-sizing: border-box;
-    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     width: 60vw;
     height: 20vw;
     line-height: 2vw;
@@ -300,20 +302,21 @@ span {
     border-radius: 2vw;
 }
 
-.profile-details h2{
+.profile-details h2 {
     font-size: 2.5vw;
     margin-bottom: 1vw;
 }
-.profile-details span{
+
+.profile-details span {
     color: #1E90FF;
 }
 
-.profile-details p{
+.profile-details p {
     font-weight: 300;
     margin-bottom: 2vw;
 }
 
-.profile-details a{
+.profile-details a {
     font-size: 1.2vw;
     color: #1E90FF;
     text-decoration: none;
@@ -327,9 +330,62 @@ span {
     border-radius: 2vw;
 }
 
+/* COntact portion */
+.contact-Info {
+    margin-top: 5vw;
+    padding-left: 4vw;
+}
 
+.contact-Info h2 {
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
+    font-weight: 700;
+    line-height: 6vw;
+}
 
+.contact-Info span {
+    color: #1E90FF;
+}
 
+.contact-boxes {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 2.5vw;
+    justify-content: space-evenly;
+
+}
+.contact-boxes .location{
+    padding-top: 2vw;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 25vw;
+    height: 10vw;
+    border-radius: 2vw;
+}
+.contact-boxes .call-contact{
+    padding-top: 2vw;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 25vw;
+    height: 10vw;
+    border-radius: 2vw;
+}
+.contact-boxes .email{
+    padding-top: 2vw;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 25vw;
+    height: 10vw;
+    border-radius: 2vw;
+}
+.contact-boxes i{
+    font-size: 3vw;  
+    color: #1E90FF;
+}
+.contact-boxes h3{
+    font-size: 2vw;
+}
 /* hover effects portion */
 
 .heading-part .about-line:hover {
@@ -351,7 +407,7 @@ span {
     border: none;
 }
 
-.profile-details a:hover{
+.profile-details a:hover {
     color: white;
     background-color: #1E90FF;
     border: none;
