@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -18,8 +21,43 @@ body {
     position: relative;
 }
 
-/* navbar portion */
+
+/* testing protion */
+
 .nav {
+    height: 6vw;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.nav h1 {
+    font-size: 3vw;
+    margin: 0;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav ul li {
+    margin: 0 15px;
+}
+.nav ul li a {
+color: black;
+    text-decoration: none;
+    font-size: 1.3vw;
+    position: relative;
+}
+
+/* here it ends */
+/* navbar portion */
+/* .nav {
     background-color: white;
     height: 100px;
     width: 100%;
@@ -48,6 +86,11 @@ body {
     font-weight: 300;
 
 }
+.nav-part2 a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+} */
 
 .hero-section {
     font-size: 2vw;
@@ -411,4 +454,20 @@ span {
     color: white;
     background-color: #1E90FF;
     border: none;
+}
+
+
+
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; /* Position the line just below the text */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1E90FF;
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+.nav ul li a:hover::after {
+    width: 100%; /* Expand the line fully on hover */
 }
