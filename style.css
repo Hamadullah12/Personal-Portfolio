@@ -17,6 +17,7 @@ body {
     background-color: #1E90FF;
     position: relative;
 }
+
 /* navbar portion */
 .nav {
     background-color: white;
@@ -28,7 +29,7 @@ body {
     align-items: center;
 }
 
-.nav h1{
+.nav h1 {
     font-size: 2.7vw;
     font-weight: 700;
     padding-left: 2vw;
@@ -41,12 +42,13 @@ body {
     align-items: center;
 }
 
-.nav-part2 li{
+.nav-part2 li {
     list-style-type: none;
     font-size: 1.4vw;
     font-weight: 300;
 
 }
+
 .hero-section {
     font-size: 2vw;
     width: 100%;
@@ -54,10 +56,14 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
-    align-items: center; /* Align items vertically */
-    flex-direction: row; /* Arrange items in a row */
-    padding: 0 12vw; /* Adjust padding for better spacing */
-    gap: 2vw; /* Add spacing between the text and the image */
+    align-items: center;
+    /* Align items vertically */
+    flex-direction: row;
+    /* Arrange items in a row */
+    padding: 0 12vw;
+    /* Adjust padding for better spacing */
+    gap: 2vw;
+    /* Add spacing between the text and the image */
 }
 
 .heading-part h1 {
@@ -65,7 +71,8 @@ body {
     line-height: 1.5;
     color: #000;
 }
-span{
+
+span {
     color: white;
 }
 
@@ -74,95 +81,49 @@ span{
     color: white;
     width: 13vw;
     height: 4vw;
-    padding: 0.8vw 2vw; 
+    padding: 0.8vw 2vw;
     border-radius: 1.5vw;
-    text-align: center; /* Ensures text is centered */
-    cursor: pointer; /* Adds a pointer cursor on hover */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    text-align: center;
+    /* Ensures text is centered */
+    cursor: pointer;
+    /* Adds a pointer cursor on hover */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
 }
 
 .profile-image img {
-    width: 400px; /* Set the width of the image */
-    height: 400px; /* Set the height of the image */
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image fits nicely */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for aesthetics */
-    
+    width: 400px;
+    /* Set the width of the image */
+    height: 400px;
+    /* Set the height of the image */
+    border-radius: 50%;
+    /* Make the image circular */
+    object-fit: cover;
+    /* Ensure the image fits nicely */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow for aesthetics */
+
 }
 
 /* Services portion */
-.services-portion{
+.services-portion {
     height: 100%;
     width: 100%;
     padding-left: 2vw;
 }
 
-.services-heading{
+.services-heading {
     font-size: 3.5vw;
     font-weight: 700;
     margin-top: 3vw;
 
 }
-.services-heading span{
-color:#1E90FF ;
+
+.services-heading span {
+    color: #1E90FF;
 }
 
-.services-line1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin-top: 4vw;
-    box-sizing: border-box;
-    line-height: 2vw;
-    gap: 5vw;
-    padding-left: 10vw;
-}
-.service1{
-    padding: 2vw;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
-
-}
-.service2{
-    padding: 2vw;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
-
-}
-.service3{
-    padding: 2vw;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
-
-}
-
-.service1 h2{
-    font-size: 2.5vw;
-    line-height: 5vw;
-    text-align: center;
-}
-.service2 h2{
-    font-size: 2.5vw;
-    line-height: 5vw;
-    text-align: center;
-}
-.service3 h2{
-    font-size: 2.5vw;
-    line-height: 5vw;
-    text-align: center;
-}
-
-.service1 p{
-    text-align: center;
-}
-
-.service2 p{
-    text-align: center;
-}
-
-.service3 p{
-    text-align: center;
-}
-
-.services-line2{
+.services-line1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,18 +135,145 @@ color:#1E90FF ;
     padding-left: 10vw;
 }
 
-.services-line1 i{
+.service1 {
+    padding: 2vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+}
+
+.service2 {
+    padding: 2vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+}
+
+.service3 {
+    padding: 2vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+}
+
+.service1 h2 {
+    font-size: 2.5vw;
+    line-height: 5vw;
+    text-align: center;
+}
+
+.service2 h2 {
+    font-size: 2.5vw;
+    line-height: 5vw;
+    text-align: center;
+}
+
+.service3 h2 {
+    font-size: 2.5vw;
+    line-height: 5vw;
+    text-align: center;
+}
+
+.service1 p {
+    text-align: center;
+}
+
+.service2 p {
+    text-align: center;
+}
+
+.service3 p {
+    text-align: center;
+}
+
+.services-line2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 4vw;
+    box-sizing: border-box;
+    line-height: 2vw;
+    gap: 5vw;
+    padding-left: 10vw;
+}
+
+.services-line1 i {
     font-size: 4vw;
     padding-left: 6.5vw;
 }
-.services-line2 i{
+
+.services-line2 i {
     font-size: 4vw;
     padding-left: 6.5vw;
 }
 
+.project-section {
+    margin-top: 15vw;
+    width: 100%;
+    padding: 4vw 2vw;
+    /* Add padding for spacing */
+    background-color: #f9f9f9;
+    /* Optional: Different background color for contrast */
+}
 
+.project-heading {
+    font-size: 3.5vw;
+    padding-left: 2vw;
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
 
+.project-heading span {
+    color: #1E90FF;
+}
 
+.project-item-1 {
+    display: flex;
+    box-sizing: border-box;
+    gap: 6vw;
+    align-items: center;
+    margin-top: 7vw;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 2vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    flex: 1 1 40%;
+    /* Adjust width for responsiveness */
+}
+
+.project-details {
+    flex: 1 1 50%;
+    /*Adjust width for responsiveness*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 2vw 2vw;
+    border-radius: 2vw;
+    transition: 0.3s transform ease-out;
+}
+
+.project-details h2 {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.project-details p {
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
+}
+
+.project-details a {
+    font-size: 1.2vw;
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    width: 9vw;
+    height: 3vw;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 1vw;
+    border-radius: 2vw;
+}
 
 
 
@@ -193,8 +281,21 @@ color:#1E90FF ;
 /* hover effects portion */
 
 .heading-part .about-line:hover {
-    background-color: #1E90FF; /* Change background color */
-    color: black; /* Change text color */
-    transform: translateY(5px); /* Slight upward movement */
+    background-color: #1E90FF;
+    /* Change background color */
+    color: black;
+    /* Change text color */
+    transform: translateY(5px);
+    /* Slight upward movement */
 }
+
+.project-details:hover{
+    transform: scale(1.1);
+}
+.project-details a:hover {
+    color: white;
+    background-color: #1E90FF;
+    border: none;
+}
+
 
