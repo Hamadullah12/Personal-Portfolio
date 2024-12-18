@@ -275,6 +275,58 @@ span {
     border-radius: 2vw;
 }
 
+/* About me portion */
+
+.about-me {
+    display: flex;
+    text-align: start;
+    margin-top: 5vw;
+    padding-left: 5vw;
+}
+.about-me img{
+    border-radius: 10%;
+}
+.about-me .profile-details {
+    padding-left: 5vw;
+    padding-top: 3vw;
+    box-sizing: border-box;
+    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 60vw;
+    height: 20vw;
+    line-height: 2vw;
+    margin-top: 2vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    border-radius: 2vw;
+}
+
+.profile-details h2{
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+.profile-details span{
+    color: #1E90FF;
+}
+
+.profile-details p{
+    font-weight: 300;
+    margin-bottom: 2vw;
+}
+
+.profile-details a{
+    font-size: 1.2vw;
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    width: 9vw;
+    height: 3vw;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+}
+
 
 
 
@@ -289,13 +341,18 @@ span {
     /* Slight upward movement */
 }
 
-.project-details:hover{
+.project-details:hover {
     transform: scale(1.1);
 }
+
 .project-details a:hover {
     color: white;
     background-color: #1E90FF;
     border: none;
 }
 
-
+.profile-details a:hover{
+    color: white;
+    background-color: #1E90FF;
+    border: none;
+}
