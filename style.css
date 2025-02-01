@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -35,218 +36,216 @@ body {
     align-items: center;
     padding: 10px 20px;
 }
+
 .nav h1 {
     font-size: 3vw;
     margin: 0;
 }
+
+.nav h1 span {
+    color: #1E90FF;
+}
+
 .nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
+
 .nav ul li {
     margin: 0 15px;
 }
+
 .nav ul li a {
-color: black;
+    color: black;
     text-decoration: none;
     font-size: 1.3vw;
     position: relative;
 }
 
 /* here it ends */
-/* navbar portion */
-/* .nav {
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav h1 {
-    font-size: 2.7vw;
-    font-weight: 700;
-    padding-left: 2vw;
-}
-
-.nav-part2 ul {
-    display: flex;
-    gap: 2vw;
-    padding-right: 3vw;
-    align-items: center;
-}
-
-.nav-part2 li {
-    list-style-type: none;
-    font-size: 1.4vw;
-    font-weight: 300;
-
-}
-.nav-part2 a{
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-} */
 
 .hero-section {
-    font-size: 2vw;
+    font-size: 2rem;
+    /* Scales well across screens */
     width: 100%;
     height: calc(100% - 100px);
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
-    /* Align items vertically */
     flex-direction: row;
-    /* Arrange items in a row */
     padding: 0 12vw;
-    /* Adjust padding for better spacing */
-    gap: 2vw;
-    /* Add spacing between the text and the image */
+    gap: 2rem;
+    /* Better spacing for flexibility */
+    position: relative;
 }
 
 .heading-part h1 {
-    font-size: 3.5vw;
+    font-size: 3rem;
     line-height: 1.5;
     color: #000;
+    text-align: center;
 }
 
-span {
-    color: white;
+.heading-part span {
+    color: #fff;
 }
 
 .heading-part .about-line {
     border: 1px solid black;
-    color: white;
-    width: 13vw;
-    height: 4vw;
-    padding: 0.8vw 2vw;
-    border-radius: 1.5vw;
+    width: fit-content;
+    /* Adjusts to content */
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
     text-align: center;
-    /* Ensures text is centered */
     cursor: pointer;
-    /* Adds a pointer cursor on hover */
     transition: all 0.3s ease-in-out;
-    /* Smooth transition for hover effect */
+    background: none;
+    /* Consistent with text contrast */
+    color: #000000;
+    margin: 1rem auto;
+    /* Centers on smaller screens */
+}
+
+.heading-part .about-line a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .profile-image img {
-    width: 400px;
-    /* Set the width of the image */
-    height: 400px;
-    /* Set the height of the image */
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    /* Make the image circular */
     object-fit: cover;
-    /* Ensure the image fits nicely */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    /* Optional: Add a shadow for aesthetics */
-
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Services portion */
-.services-portion {
-    height: 100%;
-    width: 100%;
-    padding-left: 2vw;
+.profile-image img:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
 }
 
-.services-heading {
-    font-size: 3.5vw;
-    font-weight: 700;
-    margin-top: 3vw;
 
-}
+/* Services Section  */
 
 .services-heading span {
     color: #1E90FF;
 }
 
-.services-line1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin-top: 4vw;
-    box-sizing: border-box;
-    line-height: 2vw;
-    gap: 5vw;
-    padding-left: 10vw;
-}
-
-.service1 {
-    padding: 2vw;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
-}
-
-.service2 {
-    padding: 2vw;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
-}
-
-.service3 {
-    padding: 2vw;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
-}
-
-.service1 h2 {
-    font-size: 2.5vw;
-    line-height: 5vw;
-    text-align: center;
-}
-
-.service2 h2 {
-    font-size: 2.5vw;
-    line-height: 5vw;
-    text-align: center;
-}
-
-.service3 h2 {
-    font-size: 2.5vw;
-    line-height: 5vw;
-    text-align: center;
-}
-
-.service1 p {
-    text-align: center;
-}
-
-.service2 p {
-    text-align: center;
-}
-
-.service3 p {
-    text-align: center;
-}
-
+/* Styling for the services container */
+.services-line1,
 .services-line2 {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 90%;
-    margin-top: 4vw;
-    box-sizing: border-box;
-    line-height: 2vw;
-    gap: 5vw;
-    padding-left: 10vw;
+    /* Align cards horizontally */
+    gap: 2vw;
+    /* Space between cards */
+    margin-bottom: 2vh;
+    /* Space between rows */
 }
 
-.services-line1 i {
-    font-size: 4vw;
-    padding-left: 6.5vw;
+/* Styling for individual service cards */
+.services-line1 .service1,
+.services-line1 .service2,
+.services-line1 .service3,
+.services-line2 .service1,
+.services-line2 .service2,
+.services-line2 .service3 {
+    flex: 1;
+    max-width: 25vw;
+    /* Fixed width using viewport width */
+    height: 45vh;
+    /* Fixed height using viewport height */
+    background-color: #fff;
+    /* White background for the cards */
+    border-radius: 1rem;
+    /* Smooth corners */
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effect */
+    padding: 1.5rem;
+    /* Padding inside the card */
+    text-align: center;
+    /* Center content */
+    overflow: hidden;
+    /* Prevent content overflow */
+    display: flex;
+    flex-direction: column;
+    /* Stack content vertically */
+    justify-content: space-between;
+    /* Spread content evenly */
 }
 
+/* Styling for text overflow */
+.services-line1 .service1 p,
+.services-line1 .service2 p,
+.services-line1 .service3 p,
+.services-line2 .service1 p,
+.services-line2 .service2 p,
+.services-line2 .service3 p {
+    font-size: 1rem;
+    /* Paragraph font size */
+    color: #666;
+    /* Gray text */
+    line-height: 1.6;
+    /* Better spacing for readability */
+    overflow: hidden;
+    /* Prevent overflow */
+}
+
+/* Hover effect for the cards */
+.services-line1 .service1:hover,
+.services-line1 .service2:hover,
+.services-line1 .service3:hover,
+.services-line2 .service1:hover,
+.services-line2 .service2:hover,
+.services-line2 .service3:hover {
+    transform: translateY(-1rem);
+    /* Move the card upwards slightly */
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.2);
+    /* Enhance shadow on hover */
+}
+
+/* Icon styling */
+.services-line1 i,
 .services-line2 i {
-    font-size: 4vw;
-    padding-left: 6.5vw;
+    font-size: 2.5rem;
+    /* Size of icons */
+    color: #1E90FF;
+    /* Icon color */
+    margin-bottom: 1rem;
+    /* Space below icons */
 }
 
+/* Title styling */
+.services-line1 h2,
+.services-line2 h2 {
+    font-size: 1.5rem;
+    /* Title size */
+    margin: 1rem 0;
+    /* Space above and below */
+    color: #333;
+    /* Darker text for contrast */
+}
+
+/* General spacing */
+.services-heading {
+    font-size: 3.5rem;
+    /* Heading size */
+    color: #1E90FF;
+    /* Heading color */
+    text-align: center;
+    /* Center heading */
+    margin-bottom: 2vh;
+    /* Space below heading */
+}
+
+/* chat gpt code  */
 .project-section {
-    margin-top: 15vw;
+    margin-top: 20rem;
     width: 100%;
     padding: 4vw 2vw;
     /* Add padding for spacing */
@@ -398,7 +397,8 @@ span {
     justify-content: space-evenly;
 
 }
-.contact-boxes .location{
+
+.contact-boxes .location {
     padding-top: 2vw;
     box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -406,7 +406,8 @@ span {
     height: 10vw;
     border-radius: 2vw;
 }
-.contact-boxes .call-contact{
+
+.contact-boxes .call-contact {
     padding-top: 2vw;
     box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -414,7 +415,8 @@ span {
     height: 10vw;
     border-radius: 2vw;
 }
-.contact-boxes .email{
+
+.contact-boxes .email {
     padding-top: 2vw;
     box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -422,22 +424,60 @@ span {
     height: 10vw;
     border-radius: 2vw;
 }
-.contact-boxes i{
-    font-size: 3vw;  
+
+.contact-boxes i {
+    font-size: 3vw;
     color: #1E90FF;
 }
-.contact-boxes h3{
+
+.contact-boxes h3 {
     font-size: 2vw;
 }
+
+/* footer portion */
+footer {
+    margin-top: 5rem;
+    text-align: center;
+    padding: 2rem 0 0.5rem;
+    background-color: #1A202C;
+    color: antiquewhite;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+
+.container span {
+    color: #1E90FF;
+}
+
+.social-links li {
+    list-style-type: none;
+}
+
+.social-links li a {
+    color: rgb(133, 127, 127);
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    color: #1E90FF;
+}
+
 /* hover effects portion */
 
 .heading-part .about-line:hover {
-    background-color: #1E90FF;
-    /* Change background color */
-    color: black;
-    /* Change text color */
     transform: translateY(5px);
-    /* Slight upward movement */
+}
+
+.heading-part .about-line a:hover {
+    background-color: #1E90FF;
+    color: #f1e5e5;
 }
 
 .project-details:hover {
@@ -456,18 +496,110 @@ span {
     border: none;
 }
 
+.nav ul li a:hover {
+    color: #1E90FF;
 
-
-.nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: -3px; /* Position the line just below the text */
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #1E90FF;
-    transition: width 0.3s ease-in-out; /* Smooth animation */
 }
-.nav ul li a:hover::after {
-    width: 100%; /* Expand the line fully on hover */
+
+
+
+
+/* spacing */
+
+/* Add consistent spacing for all sections together */
+.services-portion,
+.project-section,
+.about-me,
+.contact-Info {
+    margin-top: 10vh;
+    /* Same spacing for all sections */
+}
+
+
+
+
+/* Responsive Design for Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    .hero-section {
+        flex-direction: column;
+        /* Stack content vertically */
+        padding: 0 2rem;
+        gap: 1.5rem;
+        /* Reduce spacing */
+    }
+
+    .heading-part h1 {
+        font-size: 2rem;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .heading-part .about-line {
+        padding: 0.5rem 1rem;
+        width: auto;
+        /* Fit smaller screens */
+    }
+}
+
+/* Responsive styling for mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+
+    /* Adjust the heading size for mobile */
+    .services-heading {
+        font-size: 2rem;
+        /* Smaller heading size */
+        margin-bottom: 3vh;
+        /* Add spacing below the heading */
+    }
+
+    /* Stack cards vertically */
+    .services-line1,
+    .services-line2 {
+        flex-direction: column;
+        /* Stack the cards */
+        gap: 3vh;
+        /* Add vertical spacing between cards */
+        margin-bottom: 5vh;
+        /* Add spacing between rows */
+    }
+
+    /* Make individual cards full width */
+    .services-line1 .service1,
+    .services-line1 .service2,
+    .services-line1 .service3,
+    .services-line2 .service1,
+    .services-line2 .service2,
+    .services-line2 .service3 {
+        max-width: 90%;
+        /* Full width with some padding on the sides */
+        height: auto;
+        /* Let the height adjust dynamically */
+        padding: 1rem;
+        /* Adjust padding for better spacing */
+    }
+
+    /* Adjust text size for readability */
+    .services-line1 h2,
+    .services-line2 h2 {
+        font-size: 1.2rem;
+        /* Slightly smaller titles */
+    }
+
+    .services-line1 p,
+    .services-line2 p {
+        font-size: 0.9rem;
+        /* Reduce paragraph font size */
+        line-height: 1.4;
+        /* Slightly tighter spacing */
+    }
+
+    /* Reduce icon size */
+    .services-line1 i,
+    .services-line2 i {
+        font-size: 2rem;
+        /* Smaller icons */
+    }
 }
