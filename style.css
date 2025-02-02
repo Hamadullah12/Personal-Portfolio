@@ -299,7 +299,8 @@ body {
 }
 
 .project-details p {
-    font-size: 1.2vw;
+    font-size: 1vw;
+    color: #666;
     margin-bottom: 1.5vw;
 }
 
@@ -453,6 +454,15 @@ body {
     font-size: 1.5vw;
 }
 
+.contact-boxes a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.contact-boxes a:hover {
+    color: #1E90FF;
+}
 
 /* footer portion */
 footer {
@@ -573,6 +583,7 @@ footer {
         /* Smaller heading size */
         margin-bottom: 3vh;
         /* Add spacing below the heading */
+        margin-top: 8rem;
     }
 
     /* Stack cards vertically */
@@ -580,7 +591,7 @@ footer {
     .services-line2 {
         flex-direction: column;
         /* Stack the cards */
-        gap: 3vh;
+        gap: 2vh;
         /* Add vertical spacing between cards */
         margin-bottom: 5vh;
         /* Add spacing between rows */
@@ -599,6 +610,7 @@ footer {
         /* Let the height adjust dynamically */
         padding: 1rem;
         /* Adjust padding for better spacing */
+        margin-left: 1rem;
     }
 
     /* Adjust text size for readability */
@@ -627,7 +639,7 @@ footer {
 /* Responsive Design for Mobile Screens (480px and below) */
 @media (max-width: 480px) {
     .project-section {
-        margin-top: 10rem;
+        margin-top: 3rem;
         /* Reduce margin for smaller screens */
         padding: 5vw;
         /* Increase padding for better spacing */
@@ -670,6 +682,7 @@ footer {
 
     .project-details p {
         font-size: 4vw;
+        font-weight: 200;
         /* Larger font size for mobile */
         margin-bottom: 4vw;
     }
@@ -736,7 +749,7 @@ footer {
         /* Larger font size for mobile */
         margin-bottom: 4vw;
         /* Adjust margin */
-        line-height: 5vw;
+        line-height: 7vw;
         /* Adjust line height for readability */
     }
 
@@ -778,7 +791,7 @@ footer {
         /* Stack boxes vertically on mobile */
         align-items: center;
         /* Center align boxes */
-line-height: normal;
+        line-height: normal;
     }
 
     .contact-boxes .location,
