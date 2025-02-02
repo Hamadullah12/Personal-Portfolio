@@ -515,7 +515,7 @@ footer {
     /* Same spacing for all sections */
 }
 
-
+/* Responsive portion */
 
 
 /* Responsive Design for Mobile Screens (480px and below) */
@@ -601,5 +601,69 @@ footer {
     .services-line2 i {
         font-size: 2rem;
         /* Smaller icons */
+    }
+}
+
+/* Responsive Design for Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    .project-section {
+        margin-top: 10rem;
+        /* Reduce margin for smaller screens */
+        padding: 5vw;
+        /* Increase padding for better spacing */
+    }
+
+    .project-heading {
+        font-size: 8vw;
+        /* Larger font size for mobile */
+        margin-bottom: 5vw;
+    }
+
+    .project-item-1 {
+        flex-direction: column;
+        /* Stack items vertically on mobile */
+        gap: 4vw;
+        /* Reduce gap between items */
+        margin-top: 5vw;
+        /* Reduce margin for smaller screens */
+    }
+
+    .project-image img {
+        flex: 1 1 100%;
+        /* Full width for images on mobile */
+        border-radius: 4vw;
+        /* Slightly larger border radius */
+    }
+
+    .project-details {
+        flex: 1 1 100%;
+        /* Full width for details on mobile */
+        padding: 4vw;
+        /* Increase padding for better readability */
+    }
+
+    .project-details h2 {
+        font-size: 6vw;
+        /* Larger font size for mobile */
+        margin-bottom: 3vw;
+    }
+
+    .project-details p {
+        font-size: 4vw;
+        /* Larger font size for mobile */
+        margin-bottom: 4vw;
+    }
+
+    .project-details a {
+        font-size: 4vw;
+        /* Larger font size for mobile */
+        width: 30vw;
+        /* Adjust button width */
+        height: 10vw;
+        /* Adjust button height */
+        padding-top: 2vw;
+        /* Adjust padding */
+        border-radius: 4vw;
+        /* Slightly larger border radius */
     }
 }
