@@ -14,17 +14,23 @@
   <body>
     <div id="main-box">
       <div class="nav">
-        <h1>Hamad <span> Codes</span></h1>
+        <h1>Hamad <span>Codes</span></h1>
         <div class="nav-part2">
-          <!-- <div class="nav-part2"> -->
-          <ul>
+          <ul id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about-me">About Me!</a></li>
             <li><a href="#contact-info">Contact Info</a></li>
           </ul>
-          <!-- </div> -->
+        </div>
+        <div id="hamburger-icon" class="icon" onclick="toggleNav()">
+          <i class="ri-menu-5-fill"></i
+          ><!-- Hamburger icon -->
+        </div>
+        <div id="close-icon" class="icon" onclick="toggleNav()">
+          <i class="ri-close-line"></i
+          ><!-- Cross icon -->
         </div>
       </div>
       <div class="hero-section" id="home">
@@ -242,5 +248,6 @@
         </div>
       </footer>
     </div>
+    <script src="./App.js"></script>
   </body>
 </html>

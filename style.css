@@ -64,6 +64,19 @@ body {
     position: relative;
 }
 
+/* nav icons  */
+.icon {
+    display: none;
+    /* Hide icons by default */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#close-icon {
+    display: none;
+    /* Hide cross icon by default */
+}
+
 /* here it ends */
 
 .hero-section {
@@ -81,16 +94,50 @@ body {
     position: relative;
 }
 
+/* here this section we are adding for animation of text */
+
 .heading-part h1 {
     font-size: 3rem;
     line-height: 1.5;
     color: #000;
     text-align: center;
+    display: inline-block;
+    /* Keep text in one line */
+    border-right: 2px solid #000;
+    /* Cursor effect */
+    animation: blink-caret 0.75s step-end infinite;
 }
 
 .heading-part span {
     color: #fff;
+    /* Change to any visible color */
+    font-weight: bold;
 }
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor blink animation */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #000;
+    }
+}
+
 
 .heading-part .about-line {
     border: 1px solid black;
@@ -547,8 +594,47 @@ footer {
 
 /* Responsive portion */
 
+/* for navbar  600px */
+@media (max-width: 600px) {
+    .nav ul {
+        display: none;
+        /* Hide the navbar links */
+        flex-direction: column;
+        position: absolute;
+        top: 6vw;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px 0;
+    }
 
-/* Responsive Design for Mobile Screens (480px and below) */
+    .nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .icon {
+        display: block;
+        /* Show hamburger icon */
+    }
+
+    .nav ul.active {
+        display: flex;
+        /* Show navbar links when active */
+    }
+
+    #hamburger-icon.active {
+        display: none;
+        /* Hide hamburger icon when active */
+    }
+
+    #close-icon.active {
+        display: block;
+        /* Show cross icon when active */
+    }
+}
+
+/* Responsive Design for Mobile Screens (480px and below) Hero section*/
 @media (max-width: 480px) {
     .hero-section {
         flex-direction: column;
