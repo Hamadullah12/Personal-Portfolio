@@ -524,6 +524,10 @@ footer {
         text-align: center;
     }
 
+    .nav ul li a {
+        font-size: 1rem;
+    }
+
     .icon {
         display: block;
     }
@@ -562,6 +566,7 @@ footer {
         width: auto;
     }
 
+    /* services portion */
     .services-heading {
         font-size: 2rem;
         margin-bottom: 3vh;

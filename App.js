@@ -10,29 +10,59 @@ function toggleNav() {
   hamburgerIcon.classList.toggle("active");
   closeIcon.classList.toggle("active");
 }
-
-// for text animation
-
 document.addEventListener("DOMContentLoaded", function () {
   const heading = document.querySelector(".heading-part h1");
 
-  // Store the original HTML to keep <span> elements
-  const textHTML = `Hello, I am Hamad <span> Ullah </span> Frontend <span> Developer </span>`;
+  // Structured text without raw HTML slicing
+  const textSegments = [
+    { text: "Hello, I am Hamad ", isSpan: false },
+    { text: "Ullah", isSpan: true },
+    { text: " Frontend ", isSpan: false },
+    { text: "Developer", isSpan: true },
+  ];
+
   heading.innerHTML = ""; // Clear the text initially
 
-  let i = 0;
-  const typingSpeed = 100; // Speed of typing (in milliseconds)
+  let segmentIndex = 0;
+  let charIndex = 0;
+  const typingSpeed = 100; // Typing speed in milliseconds
 
   function typeWriter() {
-    if (i < textHTML.length) {
-      // Add one character at a time while preserving spans
-      heading.innerHTML = textHTML.slice(0, i + 1);
-      i++;
-      setTimeout(typeWriter, typingSpeed); // Recursive typing effect
-    } else {
-      heading.style.borderRight = "none"; // Remove cursor after typing is done
+    if (segmentIndex < textSegments.length) {
+      const segment = textSegments[segmentIndex];
+
+      if (!segment.isSpan) {
+        // Normal text, type character by character
+        if (charIndex < segment.text.length) {
+          heading.innerHTML += segment.text[charIndex];
+          charIndex++;
+          setTimeout(typeWriter, typingSpeed);
+        } else {
+          charIndex = 0;
+          segmentIndex++;
+          setTimeout(typeWriter, typingSpeed);
+        }
+      } else {
+        // Text inside a span
+        const span = document.createElement("span");
+        heading.appendChild(span);
+
+        function typeSpanText() {
+          if (charIndex < segment.text.length) {
+            span.innerHTML += segment.text[charIndex];
+            charIndex++;
+            setTimeout(typeSpanText, typingSpeed);
+          } else {
+            charIndex = 0;
+            segmentIndex++;
+            setTimeout(typeWriter, typingSpeed);
+          }
+        }
+
+        typeSpanText();
+      }
     }
   }
 
-  typeWriter(); // Start the typing animation
+  typeWriter(); // Start the animation
 });
